@@ -53,7 +53,7 @@ public class HampGradingSimulator extends JFrame
 		rift.setHorizontalAlignment(SwingConstants.CENTER);
 		rift.setBounds(10, 100, 414, 103);
 		welcome.add(rift);
-		
+		 
 		ok = (int) Math.floor(Math.random() * (11) + 90);
 //		System.out.println(x);
 		idk = String.valueOf(ok);

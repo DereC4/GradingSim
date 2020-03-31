@@ -18,7 +18,6 @@ public class HampGradingSimulator extends JFrame
 	public HampGradingSimulator()
 	{
 		int x;
-		int max = 100;
 		String strX;
 		
 		super.setName("Hamp Grading Simulator");

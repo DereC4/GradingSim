@@ -14,11 +14,11 @@ import javax.swing.border.EmptyBorder;
 public class HampGradingSimulator extends JFrame
 {
 	private JPanel welcome;
-	private JLabel to, summoners;
+	private JLabel to, summoners, rift;
 
 	public HampGradingSimulator()
 	{
-		int rift;
+		int ok;
 		String idk;
 		
 		super.setName("Hamp Grading Simulator");
@@ -40,15 +40,23 @@ public class HampGradingSimulator extends JFrame
 		to.setHorizontalAlignment(SwingConstants.CENTER);
 		to.setBounds(10, 11, 414, 103);
 		welcome.add(to);
+		
 		summoners = new JLabel("Hamp Grading Simulator");
 		summoners.setFont(new Font("Arial", Font.PLAIN, 35));
 		summoners.setHorizontalAlignment(SwingConstants.CENTER);
-		summoners.setBounds(10, 50, 414, 103);
+		summoners.setBounds(10, 55, 414, 103);
 		welcome.add(summoners);
 		
-		rift = (int) Math.floor(Math.random() * (11) + 90);
+		rift = new JLabel("<html>To remove this annoying message in "
+				+ "<br/>the middle of your simulator, <br/>all you have to do is pay up!<html>");
+		rift.setFont(new Font("Arial", Font.PLAIN, 15));
+		rift.setHorizontalAlignment(SwingConstants.CENTER);
+		rift.setBounds(10, 100, 414, 103);
+		welcome.add(rift);
+		
+		ok = (int) Math.floor(Math.random() * (11) + 90);
 //		System.out.println(x);
-		idk = String.valueOf(rift);
+		idk = String.valueOf(ok);
 		to.setText(idk);
 		but.addActionListener(new ActionListener()
 		{
